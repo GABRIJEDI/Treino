@@ -19,7 +19,7 @@ public class frase {
             if (verif != 'a') {
                 texto[i] = verif;
                 
-            }else if(verif == 'a'){
+            }else{
                 letra++;
             }
         }
