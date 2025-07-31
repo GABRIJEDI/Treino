@@ -10,7 +10,7 @@ public class frase {
         System.out.println("exercicio String\n");
 
         System.out.println("Digite a palavra: ");
-        palavra = scn.next().toLowerCase();
+        palavra = scn.nextLine().toLowerCase();
         qtd = palavra.length();
         char[] texto = new char[qtd];
 
@@ -22,7 +22,7 @@ public class frase {
             }else{
                 letra++;
             }
-        }
+        }           
 
         System.out.println(texto);
         System.out.println("A palavra: " + palavra + " tem o total de: " + letra + " letras 'A'");
