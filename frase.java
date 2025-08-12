@@ -18,10 +18,10 @@ public class frase {
             verif = palavra.charAt(i);
             if (verif != 'a') {
                 palavraSemA += String.valueOf(palavra.charAt(i));
-                palavraSemA += " ";
-            } else {
-                palavraComA += String.valueOf(palavra.charAt(i));
                 palavraComA += " ";
+            } else if (verif == 'a') {
+                palavraSemA += " ";
+                palavraComA += String.valueOf(palavra.charAt(i));
                 letra++;
             }
         }
