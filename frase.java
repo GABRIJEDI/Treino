@@ -6,25 +6,25 @@ public class frase {
         String palavra;
         int qtd, letra = 0;
         char verif = 0;
+        String palavraSemA = "";
 
         System.out.println("exercicio String\n");
 
         System.out.println("Digite a palavra: ");
         palavra = scn.nextLine().toLowerCase();
         qtd = palavra.length();
-        char[] texto = new char[qtd];
 
         for (int i = 0; i < qtd; i++) {
             verif = palavra.charAt(i);
             if (verif != 'a') {
-                texto[i] = verif;
-                
+                palavraSemA += String.valueOf(palavra.charAt(i));
+                palavraSemA += " ";
             }else{
                 letra++;
             }
         }           
 
-        System.out.println(texto);
+        System.out.println(palavraSemA);
         System.out.println("A palavra: " + palavra + " tem o total de: " + letra + " letras 'A'");
         scn.close();
     }
