@@ -2,11 +2,11 @@ import java.util.Scanner;
 
 public class frase {
     public static void main(String[] args) {
-        Scanner scn = new Scanner(System.in);   
+        Scanner scn = new Scanner(System.in);
         String palavra;
         int qtd, letra = 0;
         char verif = 0;
-        String palavraSemA = "";
+        String palavraSemA = "", palavraComA = "";
 
         System.out.println("exercicio String\n");
 
@@ -19,12 +19,15 @@ public class frase {
             if (verif != 'a') {
                 palavraSemA += String.valueOf(palavra.charAt(i));
                 palavraSemA += " ";
-            }else{
+            } else {
+                palavraComA += String.valueOf(palavra.charAt(i));
+                palavraComA += " ";
                 letra++;
             }
-        }           
+        }
 
         System.out.println(palavraSemA);
+        System.out.println(palavraComA);
         System.out.println("A palavra: " + palavra + " tem o total de: " + letra + " letras 'A'");
         scn.close();
     }

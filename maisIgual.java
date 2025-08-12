@@ -13,5 +13,6 @@ public class maisIgual {
         soma = letra += letra2;
 
         System.out.println(soma);
+        scn.close();
     }
 }
