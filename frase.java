@@ -16,7 +16,7 @@ public class frase {
 
         for (int i = 0; i < palavra.length(); i++) {
             char verif = palavra.charAt(i);
-            if (verif == letra.toLowerCase().charAt(0) || verif == letra.toUpperCase().charAt(0)) {
+            if (Character.toLowerCase(verif) == letra.toLowerCase().charAt(0)) {
                 palavraSemLetra += " ";
                 palavraComLetra += String.valueOf(palavra.charAt(i));
                 letraCont++;
